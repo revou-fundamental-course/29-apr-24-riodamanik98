@@ -92,13 +92,14 @@
     width: 255px;
     padding: 5px;
     height: 40px;
+    
 }
 
-#submit {
-    width: 255px;
+.button {
+        width: 255px;
+    padding: 5px;
     height: 40px;
 }
-
 
 .core-item>input{
     height: 22px;

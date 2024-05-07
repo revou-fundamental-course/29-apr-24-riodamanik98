@@ -38,17 +38,18 @@
                 </header>
 
                 <section class="item-form">
-                    <label>Your Name:</label><br><input type="text" /><br><br>
-                    <label for="email">Email:</label><br><input type="email"><br><br>
-                    <label for="option">What are you interested in?</label><br>
-                    <select id="option" name="option">
-                    <option value="option1">Opsi 1</option>
-                    <option value="option2">Opsi 2</option>
-                    <option value="option3">Opsi 3</option>
-                </select><br><br>
+                    Your Name: <br><input type="text" placeholder="First and last name" id="name-input"><br><br>
+                    Email Address:<br><input type="email" placeholder="example@gmail.com"><br><br>
+                    What are you instered in ?<br><select id="option" name="option" required><br><br>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select><br><br>
                 
 
-        <input type="submit" id="submit" value="Kirim">
+                <button type="submit" class="button">Send</button>
+             
                 </section>
             </div>
         </section>
