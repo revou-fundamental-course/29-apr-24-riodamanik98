@@ -1,0 +1,260 @@
+/* this is jss */
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navigation-container>nav>button {
+    height: 35px;
+    border: 1px solid black;
+    width: 100px;
+    padding-inline: 1px;
+    background-color: white;  
+    border-radius: 4px;  
+}
+
+.navigation-icon {
+    background-image: url(../assest/logo.png);
+    border: 0px;
+    height: 32px;
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+}
+.content-container>header {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+.content-container>header>h3 {
+    padding-top: 52px;
+    color: darkgray ;
+    font-size: 23px;
+}
+
+/* header done */
+
+.core-content {
+    display: flex;
+}
+
+.core-item{
+    height: 400px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 25px;
+}
+
+.core-item >header>h2 {
+    text-align: center;
+}
+
+.core-item> header >p {
+    padding-left: 90px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: darkgray;
+}
+
+
+.item-right {
+    background-color: gainsboro;
+}
+
+.item-left {
+    width: 2600px;
+}
+
+.item-form {
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    font-size: smaller;
+}
+
+.item-form > input {
+    padding: 5px;
+    height: 22px;
+    width: 240px;
+}
+
+#option {
+    width: 255px;
+    padding: 5px;
+    height: 40px;
+}
+
+#submit {
+    width: 255px;
+    height: 40px;
+}
+
+
+.core-item>input{
+    height: 22px;
+    width: 55%;
+    margin-left: 15px;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+}
+
+
+.our-package-content {
+    align-content: center;
+    background-color: darkgray;
+    font-size: 24px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+}
+    
+
+
+/* content done */
+
+.content-second-container {
+    margin: 32px;
+    font-family: calibri;
+    font-size: 20px;
+}
+
+
+.containe-feature {
+    display: grid;
+}
+
+.box {
+    flex: 1;
+    margin: 5px;
+    border: 0px;
+    padding: 1px;
+}
+
+.image1 {
+    float: left;
+    margin-right: 10px;
+    background-image: url(../assest/angka1.png);
+    padding: 37px;
+    margin-top: 10px;
+}
+
+.image2 {
+    float: left;
+    margin-right: 10px;
+    background-image: url(../assest/angka2.png);
+    padding: 37px;
+    margin-top: 10px;
+}
+
+.image3 {
+    float: left;
+    margin-right: 10px;
+    background-image: url(../assest/angka3.png);
+    padding: 37px;
+    margin-top: 10px;
+}
+
+/* content after our package */
+
+
+.content-third-container {
+    margin: 32px;
+    font-family: calibri;
+    font-size: 20px;
+}
+
+.container-feature-2 {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.container-feature-2 >.box2 > h3 {
+    padding-top: 10px;
+}
+
+
+.lamp {
+    float: left;
+    margin-right: 10px;
+    background-image: url(../assest/lamp.png);
+    padding: 37px;
+    margin-top: 10px;
+}
+
+.star {
+    float: left;
+    margin-right: 10px;
+    background-image: url(../assest/star.png);
+    padding: 37px;
+    margin-top: 10px;
+}
+
+.box2 {
+    flex: 1;
+    margin: 5px;
+    border: 0px;
+    padding: 1px;
+}
+
+
+.box2 >p {
+    margin-left: 85px;
+    font-size: 18px;
+    color: darkgray;
+}
+
+/* Your Closing content */
+
+
+.your-closing-content {
+    align-content: center;
+    font-size: 24px;
+    font-family: calibri;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.your-closing-content> p {
+    font-size: 15px;
+    color: darkgray;
+}
+
+#submit2 {
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-family: fantasy;
+}
+
+/* Your Closing content done */
+
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    font-size: small;
+    font-family: calibri;
+}
+
+.footer-icon {
+    
+    background-image: url(../assest/logo.png);
+    display: block;
+    margin: 0 auto;
+    max-width: 90px;
+    height: 5px;
+    padding-top: 20px;
+}
