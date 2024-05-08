@@ -1,4 +1,18 @@
 /* this is jss */
+/* LEARN MINI PROJECT REVOU */
+/* Im sorry if is mockup maybe not good im just learn */
+
+
+/*pict body*/
+body {
+    background-image: url(../assest/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+
+  }
+
+/*logo and nav content */
 
 .navigation-container {
     display: flex;
@@ -63,6 +77,25 @@
     .item-left {
         flex-direction: column;
 
+    }
+    .item-left {
+        flex-direction: column;
+        width: 33.33%; /* Each image takes one-third of the container's width */
+        height: 200px; /* Adjust the height as needed */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .image-japan {
+        background-image: url(../assest/JAPAN.png); 
+    }
+    
+    .image2 {
+        background-image: url(../assest/BALI.png);
+    }
+    
+    .image3 {
+        background-image: url(../assest/SINGAPORE.png) 
     }
   
     .nav > button {
@@ -146,7 +179,7 @@
   }
 
 
-/* header done */
+/* core content */
 
 .core-content {
     display: flex;
@@ -177,31 +210,35 @@
 }
 
 .item-left {
-    padding-left: 30px;
+    display: block;
 }
 
+.mySlides {
+    display:none;
+
+}
 .item-form {
     margin: 20px;
     padding: 1px;
     border: 0px;
-  }
+}
   
-  .item-form label {
+.item-form label {
     display: block;
     margin-bottom: 5px;
-  }
+}
   
-  .item-form select,
-  .item-form input {
+.item-form select,
+.item-form input {
     margin-bottom: 10px;
     width: 95%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
   
   
-  .item-form button {
+.item-form button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -209,13 +246,15 @@
     border-radius: 4px;
     cursor: pointer;
     width: -webkit-fill-available;
-  }
+}
 
-  .error-message {
+.error-message {
     color: red;
     font-size: 12px;
     display: block;
-  }
+}
+
+/*content our package */
   
 
 
@@ -230,7 +269,7 @@
     
 
 
-/* content done */
+/* second content */
 
 .content-second-container {
     margin: 32px;
@@ -368,3 +407,5 @@ footer {
     height: 5px;
     padding-top: 20px;
 }
+
+/* THANK YOU :) for see my mini project */
