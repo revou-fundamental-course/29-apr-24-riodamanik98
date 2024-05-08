@@ -11,10 +11,9 @@
 .navigation-container>nav>button {
     height: 35px;
     border: 1px solid black;
-    width: 100px;
-    padding-inline: 1px;
-    background-color: white;  
-    border-radius: 4px;  
+    padding-inline: 10px;
+    background-color: white;
+    border-radius: 4px;
 }
 
 .navigation-icon {
@@ -39,6 +38,114 @@
     font-size: 23px;
 }
 
+/*if header in 600px */
+
+@media screen and (max-width: 600px) {
+    /* Apply styles for screens with a maximum width of 600px */
+    .navigation-container {
+        padding: 12px;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+  
+    .navigation-container > .navigation-icon {
+      display: flex;
+      align-self: center;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item-left {
+        flex-direction: column;
+
+    }
+  
+    .nav > button {
+        width: -webkit-fill-available;
+        margin: 0px;
+    }
+  
+    .content-container > header {
+      padding-top: 20px;
+      font-size: 20px;
+    }
+  
+    .core-content {
+      flex-direction: column;
+    }
+  
+    .core-item {
+      height: auto;
+      width: 100%;
+      margin: 10px;
+    }
+  
+    .item-form {
+      margin: 10px;
+    }
+  
+    .item-form > label,
+    .item-form > select,
+    .item-form > input,
+    .item-form > button {
+      width: 100%;
+    }
+  
+    .content-second-container,
+    .content-third-container {
+      margin: 10px;
+      font-size: 16px;
+    }
+  
+    .container-feature,
+    .container-feature-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box,
+    .box2 {
+      width: 100%;
+      margin: 5px;
+    }
+  
+    .image1,
+    .image2,
+    .image3,
+    .lamp,
+    .star {
+      float: none;
+      margin: 0;
+      padding: 10px;
+      background-size: contain;
+    }
+  
+    .your-closing-content {
+      padding-bottom: 30px;
+      font-size: 20px;
+    }
+  
+    #submit2 {
+      width: 80%;
+    }
+  
+    footer {
+      padding: 10px;
+      font-size: x-small;
+    }
+  
+    .footer-icon {
+      display: none;
+    }
+  }
+
+
 /* header done */
 
 .core-content {
@@ -47,9 +154,9 @@
 
 .core-item{
     height: 480px;
-    width: 100%;
+    width: -webkit-fill-available;
     border: 1px solid black;
-    margin: 25px;
+    margin: 20px;
 }
 
 .core-item >header>h2 {
@@ -70,7 +177,7 @@
 }
 
 .item-left {
-    width: 2600px;
+    padding-left: 30px;
 }
 
 .item-form {
