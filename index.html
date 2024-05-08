@@ -50,19 +50,17 @@
                         <span class="error-message" id="email-error"></span>
                       </div>
                       <div>
-                        <label for="option">Type:</label>
-                        <select id="option" name="option">
-                          <option selected disabled value="select">Select Option</option>
+                        <label for="inputType">Type:</label>
+                        <select id="inputType" name="inputType">
+                          <option selected disabled value="">Select Option</option>
                           <option value="text">Text</option>
                           <option value="number">Number</option>
                           <option value="date">Date</option>
-                          
                           <!-- Add more options as needed -->
-                        </select>
-                        <span class="error-message" id="option-error"></span><br><br>
+                        </select><br><br>
                       </div>
                       <div>
-                        <button type="submit" value="submit">Submit</button>
+                        <button type="submit" onclick="validationForm">Submit</button>
                       </div>
                     </form>
                   </section>

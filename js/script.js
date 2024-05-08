@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("myForm");
     const usernameInput = document.getElementById("username");
     const emailInput = document.getElementById("email");
-    const optionInput = document.getElementById("option");
+    const optionInput = document.getElementById("inputType");
     const usernameError = document.getElementById("username-error");
     const emailError = document.getElementById("email-error");
-    const optionError = document.getElementById("option-error");
+    const optionError = document.getElementById("inputType-error");
   
     form.addEventListener("submit", function(event) {
       event.preventDefault();
