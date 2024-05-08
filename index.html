@@ -38,19 +38,31 @@
                 </header>
 
                 <section class="item-form">
-                    Your Name: <br><input type="text" placeholder="First and last name" id="name-input"><br><br>
-                    Email Address:<br><input type="email" placeholder="example@gmail.com"><br><br>
-                    What are you instered in ?<br><select id="option" name="option" required><br><br>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                        <option value="option3">Option 3</option>
-                    </select><br><br>
-                
-
-                <button type="submit" class="button">Send</button>
-             
-                </section>
+                    <h2>Form</h2>
+                    <form id="myForm">
+                      <div>
+                        <label for="username">Username:</label>
+                        <input type="text"  placeholder="Your first and last name"   id="username" name="username" required>
+                      </div>
+                      <div>
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="example@gmail.com"  id="email" name="email" required>
+                      </div>
+                      <div>
+                        <label for="inputType">Type:</label>
+                        <select id="inputType" name="inputType">
+                          <option disabled>Select Option</option>
+                          <option value="text">Text</option>
+                          <option value="number">Number</option>
+                          <option value="date">Date</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                      </div>
+                      <div>
+                        <button type="submit">Submit</button>
+                      </div>
+                    </form>
+                  </section>
             </div>
         </section>
 
