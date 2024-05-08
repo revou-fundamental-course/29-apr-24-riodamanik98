@@ -46,7 +46,7 @@
 }
 
 .core-item{
-    height: 400px;
+    height: 480px;
     width: 100%;
     border: 1px solid black;
     margin: 25px;
@@ -93,6 +93,7 @@
     border-radius: 4px;
   }
   
+  
   .item-form button {
     background-color: #4CAF50;
     color: white;
@@ -102,6 +103,13 @@
     cursor: pointer;
     width: -webkit-fill-available;
   }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+  }
+  
 
 
 .our-package-content {
