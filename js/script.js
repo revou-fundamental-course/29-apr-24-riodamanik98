@@ -14,45 +14,43 @@ function ubahNama() {
     namaElement.textContent = "By Rio Damanik"; // Mengubah teks menjadi "Hei"
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById("myForm");
-    const usernameInput = document.getElementById("username");
-    const emailInput = document.getElementById("email");
-    const optionInput = document.getElementById("inputType");
-    const usernameError = document.getElementById("username-error");
-    const emailError = document.getElementById("email-error");
-    const optionError = document.getElementById("inputType-error");
+let validateForm = function() {
+    let username = document.getElementById('username').value;
+    let email = document.getElementById('email').value;
+    let option = document.getElementById('option').value;
+    
+    let errors = [];
   
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const username = usernameInput.value;
-      const email = emailInput.value;
-      const option = optionInput.value;
+    // Validasi username
+    if (username.trim() === '') {
+      errors.push('Username tidak boleh kosong');
+    }
   
-      if (username === "") {
-        usernameError.innerHTML = "Username Tidak boleh kosong!";
-      } else {
-        usernameError.innerHTML = "";
-      }
+    // Validasi email
+    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      errors.push('Email tidak valid');
+    }
   
-      if (email === "") {
-        emailError.innerHTML = "Email Tidak boleh kosong!";
-      } else {
-        emailError.innerHTML = "";
-      }
-  
-      if (option === "") {
-        optionError.innerHTML = "Option Tidak boleh kosong!";
-      } else {
-        optionError.innerHTML = "";
-      }
-  
-      if (username!== "" && email!== "" && option!== "") {
-        // Form is valid, you can submit it here
-        console.log("Form is valid!");
-      }
-    });
-  });
+    // Tampilkan pesan kesalahan atau pemberitahuan
+    let notificationDiv = document.getElementById('notification');
+    notificationDiv.innerHTML = '';
+    if (errors.length > 0) {
+      errors.forEach(function(error) {
+        let errorDiv = document.createElement('div');
+        errorDiv.textContent = error;
+        notificationDiv.appendChild(errorDiv);
+      });
+      notificationDiv.className = 'error';
+    } else {
+      // Jika tidak ada kesalahan, tampilkan pemberitahuan berhasil
+      let successDiv = document.createElement('div');
+      successDiv.textContent = 'Form berhasil diverifikasi. Data dapat dikirim.';
+      successDiv.className = 'success';
+      notificationDiv.appendChild(successDiv);
+      // Di sini Anda bisa menambahkan logika untuk mengirimkan data form ke server atau melakukan tindakan lainnya.
+    }
+  }
 
 var slideIndex = 1;
 showDivs(slideIndex);
