@@ -2,7 +2,7 @@
 
 function validation() {
     console.log('good');
-    alert("GOOD");
+    alert("GOOD"); // Test Nav if Succesfull have notification "Good"
 }
 
 document.getElementById('home-btn').addEventListener('click' , () => validation ())
@@ -14,7 +14,7 @@ function ubahNama() {
     namaElement.textContent = "By Rio Damanik"; // Mengubah teks 
 }
 
-let validateForm = function() {
+let validateForm = function() {     // Validasi untuk Memanggil Fungsi
     let username = document.getElementById('username').value;
     let email = document.getElementById('email').value;
     let option = document.getElementById('option').value;
