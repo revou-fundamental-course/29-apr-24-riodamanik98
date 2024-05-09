@@ -11,7 +11,7 @@ document.getElementById('home-btn3').addEventListener('click' , () => validation
 
 function ubahNama() {
     var namaElement = document.getElementById("nama");
-    namaElement.textContent = "By Rio Damanik"; // Mengubah teks menjadi "Hei"
+    namaElement.textContent = "By Rio Damanik"; // Mengubah teks 
 }
 
 let validateForm = function() {
