@@ -306,7 +306,7 @@ body {
     padding: 1px;
 }
 
-.image1 {
+.gambar-angka-1 {
     float: left;
     margin-right: 10px;
     background-image: url(../assest/angka1.png);
@@ -314,7 +314,7 @@ body {
     margin-top: 10px;
 }
 
-.image2 {
+.gambar-angka-2 {
     float: left;
     margin-right: 10px;
     background-image: url(../assest/angka2.png);
@@ -322,7 +322,7 @@ body {
     margin-top: 10px;
 }
 
-.image3 {
+.gambar-angka-3 {
     float: left;
     margin-right: 10px;
     background-image: url(../assest/angka3.png);
