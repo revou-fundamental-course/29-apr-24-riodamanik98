@@ -398,10 +398,11 @@ body {
 #submit2 {
     width: 300px;
     height: 40px;
-    background-color: black;
+    background-color: LIGHTYELLOW;
     color: white;
     font-size: 17px;
     font-family: fantasy;
+    
 }
 
 /* Your Closing content done */
