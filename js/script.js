@@ -31,6 +31,11 @@ let validateForm = function() {     // Validasi untuk Memanggil Fungsi
     if (!emailRegex.test(email)) {
       errors.push('Email tidak valid');
     }
+
+     // Validasi Option
+     if (option.trim() === '') {
+      errors.push('Option tidak Terpilih');
+    }
   
     // Tampilkan pesan kesalahan atau pemberitahuan
     let notificationDiv = document.getElementById('notification');
@@ -42,6 +47,7 @@ let validateForm = function() {     // Validasi untuk Memanggil Fungsi
         notificationDiv.appendChild(errorDiv);
       });
       notificationDiv.className = 'error';
+
     } else {
       // Jika tidak ada kesalahan, tampilkan pemberitahuan berhasil
       let successDiv = document.createElement('div');
@@ -53,7 +59,7 @@ let validateForm = function() {     // Validasi untuk Memanggil Fungsi
   }
 
 
-    //Content slide show and auto
+    //Content slide Click
 var slideIndex = 1; 
 showDivs(slideIndex);
 
@@ -72,6 +78,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+    //Content Slides otomatis
 var myIndex = 0;
 carousel();
 
